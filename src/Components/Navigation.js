@@ -1,61 +1,53 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import Container from 'react-bootstrap/Container';
+import { Link } from 'react-router-dom';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
-import Home from './components/Home';
-import About from './components/About';
-import Contact from './components/Contact';
-import FAQ from './components/FAQ';
+import logo from '../images/logo.png';
 
-function App() {
+export default function Menu() {
   return (
-    <Router>
-      <Navbar bg="light" expand="lg">
-        {/* <Navbar.Brand href="#home">My App</Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="mr-auto">
-            <Nav.Link as={Link} to="/">Home</Nav.Link>
-            <Nav.Link as={Link} to="/about">About</Nav.Link>
-            <Nav.Link as={Link} to="/contact">Contact</Nav.Link>
-            <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-              <NavDropdown.Item as={Link} to="/faq">FAQ</NavDropdown.Item>
-            </NavDropdown>
-          </Nav>
-        </Navbar.Collapse> */}
-
-        <Container>
-        <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#link">Link</Nav.Link>
-            <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-                Another action
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
-                Separated link
-              </NavDropdown.Item>
-            </NavDropdown>
+    <Navbar collapseOnSelect expand="lg" bg="light"  className="p-2 custom-nav">
+      <Container fluid>
+      <Navbar.Brand href="/" className='ps-5'>
+            <img
+              src={logo}
+              width="200"
+              height="50"
+              className="d-inline-block align-top"
+              alt="React Bootstrap logo"
+            />
+          </Navbar.Brand>
+        <Navbar.Toggle aria-controls="responsive-navbar-nav navbar-toggler navbar-toggler-icon" />
+        <Navbar.Collapse id="responsive-navbar-nav navbar-toggler-icon">
+          <Nav className="m-auto">
+            <Nav.Link className="custom-link">
+              {' '}
+              <Link className="text-decoration-none text-black p-2" to="/About" >
+                <i className='bi bi-bank'></i> About
+              </Link>
+            </Nav.Link>
+            <Nav.Link className="custom-link">
+              {' '}
+              <Link className="text-decoration-none text-black p-2" to="/Connect">
+              <i className='bi bi-exclude'></i> Connect
+              </Link>
+            </Nav.Link>
+            <Nav.Link className="custom-link">
+              {' '}
+              <Link className="text-decoration-none text-black p-2" to="/Events">
+              <i className='bi bi-calendar-check-fill'></i> Events
+              </Link>
+            </Nav.Link>
+            <Nav.Link className="custom-link ">
+              {' '}
+              <Link className="text-decoration-none text-black p-2" to="/Contact">
+              <i className='bi bi-phone-fill'></i> Contact
+              </Link>
+            </Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
-      </Navbar>
-      <Switch>
-        <Route exact path="/" component={Home} />
-        <Route path="/about" component={About} />
-        <Route path="/contact" component={Contact} />
-        <Route path="/faq" component={FAQ} />
-      </Switch>
-    </Router>
+    </Navbar>
   );
 }
-
-export default App;
