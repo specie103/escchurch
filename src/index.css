@@ -10,7 +10,6 @@ font-family: 'Poppins', sans-serif;
 font-family: 'Raleway', sans-serif; 
 */
 
-
 * {
   margin: 0;
   padding: 0;
@@ -24,7 +23,7 @@ h4,
 h5,
 h6,
 p {
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   text-align: center;
 }
 
@@ -42,7 +41,7 @@ p {
   transition: all 0.4s ease 0s;
 }
 p {
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   text-align: justify;
   font-weight: 300;
   font-size: 17px;
@@ -147,135 +146,188 @@ p {
   }
 }
 
-
 /* Carousel Sections */
 
-.carouselImage{
-    height: auto;
-    max-height: 90vh;
-    padding: 2px;
+.carouselImage {
+  height: auto;
+  max-height: 90vh;
+  padding: 2px;
 }
 .carousel {
-    margin-top: 2px;
-    margin-bottom: 5px;
-  }
-  
-  .carousel-control-prev-icon,
-  .carousel-control-next-icon {
-    background-color: #101c7c;
-    height: 50px;
-    width: 50px;
-    outline: none;
-    margin-top: -25px;
+  margin-top: 2px;
+  margin-bottom: 5px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #101c7c;
+  height: 50px;
+  width: 50px;
+  outline: none;
+  margin-top: -25px;
+  display: none;
+}
+
+.carousel-control-prev-icon:before,
+.carousel-control-next-icon:before {
+  display: inline-block;
+  color: #fff;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 80%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 5px;
+  margin-bottom: 3%;
+  text-align: center;
+}
+
+@media (max-width: 800px) {
+  .carousel-caption p {
     display: none;
   }
-  
-  .carousel-control-prev-icon:before,
-  .carousel-control-next-icon:before {
-    display: inline-block;
-    color: #fff;
-    font-size: 15px;
-    font-weight: bold;
-  }
- 
   .carousel-caption {
-    background-color: rgba(0, 0, 0, 0.3);
-    width: 80%;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding: 5px;
-    margin-bottom: 3%;
-    text-align: center;
-    
+    width: 95%;
   }
- 
-  @media (max-width: 800px) {
-    .carousel-caption p{
-        display: none;
-    }
-    .carousel-caption{
-        width: 95%;
-    }
-  }
-  
-  .carousel-caption h3,
-  .carousel-caption p {
-    color: #fff;
-    margin: 0;
-    padding: 5px;
-  }
-  
-  .carousel-caption h3 {
-    font-size: 20px;
-    font-weight: 600;
-    margin-bottom: 10px;
-  }
-  
-  .carousel-caption p {
-    font-size: 20px;
-  }
-  
+}
 
+.carousel-caption h3,
+.carousel-caption p {
+  color: #fff;
+  margin: 0;
+  padding: 5px;
+}
 
-  /* Custom fade transition */
+.carousel-caption h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.carousel-caption p {
+  font-size: 20px;
+}
+
+/* Custom fade transition */
 .carousel-fade .carousel-item {
-    opacity: 0;
-    transition-duration: 0.6s;
-    transition-property: opacity;
-  }
-  
-  .carousel-fade .carousel-item.active,
-  .carousel-fade .carousel-item-next.carousel-item-left,
-  .carousel-fade .carousel-item-prev.carousel-item-right {
-    opacity: 1;
-  }
-  
-  .carousel-fade .active.carousel-item-left,
-  .carousel-fade .active.carousel-item-right {
-    opacity: 0;
-  }
-  
-  .carousel-fade .carousel-item-next,
-  .carousel-fade .carousel-item-prev,
-  .carousel-fade .carousel-item.active,
-  .carousel-fade .active.carousel-item-left,
-  .carousel-fade .active.carousel-item-prev {
-    transform: translateX(0);
-  }
-  
-  .carousel-fade .carousel-item-next.carousel-item-left,
-  .carousel-fade .carousel-item-prev.carousel-item-right,
-  .carousel-fade .active.carousel-item-left,
-  .carousel-fade .active.carousel-item-prev {
-    transform: translateX(0);
-  }
-  
-  .carousel-fade .carousel-control-prev,
-  .carousel-fade .carousel-control-next {
-    z-index: 999;
-  }
+  opacity: 0;
+  transition-duration: 0.6s;
+  transition-property: opacity;
+}
 
+.carousel-fade .carousel-item.active,
+.carousel-fade .carousel-item-next.carousel-item-left,
+.carousel-fade .carousel-item-prev.carousel-item-right {
+  opacity: 1;
+}
+
+.carousel-fade .active.carousel-item-left,
+.carousel-fade .active.carousel-item-right {
+  opacity: 0;
+}
+
+.carousel-fade .carousel-item-next,
+.carousel-fade .carousel-item-prev,
+.carousel-fade .carousel-item.active,
+.carousel-fade .active.carousel-item-left,
+.carousel-fade .active.carousel-item-prev {
+  transform: translateX(0);
+}
+
+.carousel-fade .carousel-item-next.carousel-item-left,
+.carousel-fade .carousel-item-prev.carousel-item-right,
+.carousel-fade .active.carousel-item-left,
+.carousel-fade .active.carousel-item-prev {
+  transform: translateX(0);
+}
+
+.carousel-fade .carousel-control-prev,
+.carousel-fade .carousel-control-next {
+  z-index: 999;
+}
 
 .hero {
-    width: 100%;
-    max-height: 90vh;
-    overflow: hidden;
-  }
-  
+  width: 100%;
+  max-height: 90vh;
+  overflow: hidden;
+}
 
-  
-  @keyframes zoom {
-    from {
-      transform: scale(1, 1);
-    }
-    to {
-      transform: scale(1.5, 1.5);
-    }
+@keyframes zoom {
+  from {
+    transform: scale(1, 1);
   }
-  
-  .carousel-inner .carousel-item > img {
-    -webkit-animation: zoom 20s;
-    animation: zoom 9s;
+  to {
+    transform: scale(1.5, 1.5);
   }
-  
+}
+
+.carousel-inner .carousel-item > img {
+  -webkit-animation: zoom 20s;
+  animation: zoom 9s;
+}
+
+/*==============ANTHEM / MP3 =====*/
+
+.mp3-player {
+  background-color: #202020;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.controls button {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  font-size: 24px;
+  margin: 0 10px;
+  transition: all 0.2s ease;
+}
+
+.controls button:hover {
+  transform: scale(1.2);
+}
+
+.progress {
+  width: 100%;
+}
+
+.progress .progress-bar {
+  background-color: #3a3a3a;
+}
+
+.progress .progress-bar::-webkit-progress-value {
+  background-color: #fff;
+}
+
+.progress .progress-bar::-moz-progress-bar {
+  background-color: #fff;
+}
+
+.progress .progress-bar {
+  height: 8px;
+  border-radius: 5px;
+}
+
+.progress .progress-bar .sr-only {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
