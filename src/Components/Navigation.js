@@ -7,7 +7,7 @@ import logo from '../images/logo.png';
 
 export default function Menu() {
   return (
-    <Navbar collapseOnSelect expand="lg" bg="light"  className="p-2 custom-nav">
+    <Navbar collapseOnSelect expand="lg"   className=" custom-nav" sticky='top'>
       <Container fluid>
       <Navbar.Brand href="/" className='navbar-brand'>
             <img
@@ -20,7 +20,7 @@ export default function Menu() {
           </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav navbar-toggler navbar-toggler-icon" />
         <Navbar.Collapse id="responsive-navbar-nav navbar-toggler-icon">
-          <Nav className="me-auto">
+          <Nav className="ms-auto">
             <Nav.Link className="custom-link">
               {' '}
               <Link className="text-decoration-none text-black p-2" to="/About" >

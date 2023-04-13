@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import Menu from './Components/Navigation';
-import {Routes, Route, Link, BrowserRouter} from 'react-router-dom';
+import {Routes, Route, BrowserRouter} from 'react-router-dom';
 import Home from './Page/Home';
 import About from './Page/About';
 import Connect from './Page/Connect';
