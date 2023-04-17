@@ -20,7 +20,7 @@ function Appt() {
             {
             loading ? (
                 <div className="preloader">
-                    <div className="preloader-text">Loading...</div>
+                    <div className="preloader-text">Our Safe Haven...</div>
                 </div>
             ) : (
                 <>
