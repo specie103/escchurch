@@ -11,7 +11,7 @@ function Home() {
             <MyCarousel/>
             <Welcome/>
             <Anthem/>
-            <Programs limit={15} />
+            <Programs limit={4} />
             <Footer />
         </div>
     )

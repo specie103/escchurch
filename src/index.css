@@ -381,6 +381,8 @@ p {
 .read-more {
   display: none;
   margin-top: 20px;
+  overflow: hidden;
+  transition: max-height 2.5s ease-out;
 }
 
 .show {
@@ -454,34 +456,33 @@ p {
 }
 
 /*===== More--- Buttons== */
-/* 
-.custom-button {
+.centered-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.link-button {
   background-color: #101c7c;
   color: #fff;
   border: none;
+  border-radius: 4px;
   padding: 10px 20px;
-  border-radius: 20px;
-  text-transform: uppercase;
-  font-weight: bold;
-  letter-spacing: 1px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-  transition: all 0.3s ease-in-out;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-.custom-button:hover {
-  background-color: #0062cc;
-  color: #fff;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-  transform: translateY(-2px);
+.link-button:hover {
+  background-color: #0069d9;
+  transform: scale(1.05);
 }
 
-.custom-button:active {
-  transform: translateY(0);
+.link-button:focus {
+  outline: none;
   box-shadow: none;
-} */
+}
 
-
-
-
-
-
+.link-button:active {
+  transform: scale(0.95);
+}
