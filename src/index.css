@@ -486,3 +486,139 @@ p {
 .link-button:active {
   transform: scale(0.95);
 }
+
+
+
+
+/* UPcoming Events ================ */
+
+/* UpcomingEvents.css */
+
+.event-card {
+  margin-bottom: 30px;
+  padding: 2px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  display: flex;
+  min-height: 200px;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.flex-item1, .flex-item2, .flex-item4{
+  flex: 20%;
+}
+.flex-item3{
+  padding: 10px;
+  flex: 40%;
+}
+
+.flex-item1{
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  background-color: #101c7c;
+  color: #e9ecef;
+  padding: 22px;
+  text-align: center;
+  text-transform: uppercase;
+  height: 200px;
+}
+/* Responsive layout - makes a one column layout instead of a two-column layout */
+@media (max-width: 800px) {
+  .flex-item-1, .flex-item2, .flex-item3, .flex-item4 {
+    flex: 100%;
+  }
+  .flex-item-1{
+    border-radius: 1px;
+  }
+}
+
+.event-image-wrapper {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.event-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.event-over {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 6px 12px;
+  border-radius: 0 8px;
+  background-color: #ff6b6b;
+  color: #fff;
+  font-weight: bold;
+}
+
+.event-title {
+  margin-bottom: 10px;
+  font-size: 17pt;
+  font-weight: 700;
+  margin: 0px;
+  color: #101c7c;
+}
+
+.event-date {
+  margin-bottom: 10px;
+}
+
+.event-date .day{
+  display: block;
+  font-size: 56pt;
+  font-weight: 100;
+  line-height: 1;
+}
+.event-date .month{
+  display: block;
+  font-size: 24pt;
+  font-weight: 900;
+  line-height: 1;
+}
+.event-description {
+  margin-top: 10pt;
+  font-size: 16px;
+  color: #444;
+  line-height: 1.4;
+  padding: 4px;
+}
+
+.event-timer {
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  font-size: 0.9rem;
+  margin: 0.5rem;
+  padding: 5px;
+}
+@media (max-width: 800px) {
+  .event-timer{
+    display: flex;
+  }
+}
+
+.timer-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0.4rem;
+}
+
+.timer-value {
+  font-weight: bold;
+  color: #333;
+}
+
+.timer-label {
+  color: #999;
+}
+
+
