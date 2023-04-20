@@ -127,7 +127,7 @@ const Programs = ({limit}) => {
                         }/>
                 ))
             } </div>
-            <div className="centered-container">
+            <div className="centered-container my-5">
                 <Link to="/Connect" className="text-decoration-none">
                     <Button variant="primary" className="link-button">
                         More Programs

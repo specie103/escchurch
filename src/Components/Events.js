@@ -2,12 +2,14 @@ import React, {useState, useEffect} from "react";
 import eventsData from '../eventsData';
 import {Container, Row} from "react-bootstrap";
 import Image from 'react-bootstrap/Image';
+import {Button} from 'react-bootstrap';
+import {Link} from 'react-router-dom';
 
 const UpcomingEvents = ({numberOfEvents}) => {
     const [events, setEvents] = useState([]);
 
     useEffect(() => {
-        setEvents(eventsData.slice(0, numberOfEvents));
+        setEvents(eventsData.slice(0, 2));
     }, [numberOfEvents]);
 
     const formatDate = (dateString) => {
@@ -137,7 +139,7 @@ const UpcomingEvents = ({numberOfEvents}) => {
     }, []);
 
     return (
-        <Container className="py-4 bg-light my-5" fluid>
+        <Container className="py-5 bg-light " fluid>
             <Container>
             <div className="hone bluec my-3">
                 <h1>Upcoming Events</h1>
@@ -147,6 +149,13 @@ const UpcomingEvents = ({numberOfEvents}) => {
                 renderEventCards()
             } </Row>
             </Container>
+            <div className="centered-container">
+                <Link to="/Events" className="text-decoration-none">
+                    <Button variant="primary" className="link-button">
+                        More Events
+                    </Button>
+                </Link>
+            </div>
         </Container>
     );
 };

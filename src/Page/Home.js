@@ -2,7 +2,7 @@ import React from 'react'
 import MyCarousel from '../Components/Carousel'
 import Welcome from '../Components/Welcome'
 import Anthem from '../Components/Anthem'
-import Programs from '../Components/Progranms'
+import Programs from '../Components/Programs'
 import Footer from '../Components/Footer'
 import UpcomingEvents from '../Components/Events'
 

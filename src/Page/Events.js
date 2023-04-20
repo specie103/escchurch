@@ -1,8 +1,10 @@
 import React from 'react'
+import UpcomingEvents from '../Components/Events'
+
 
 function Events() {
   return (
-    <div>Events</div>
+    <UpcomingEvents {...(0, 9)} />
   )
 }
 
