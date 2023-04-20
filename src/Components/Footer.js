@@ -1,6 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import logo from '../images/logo2.png'
+import { Link } from "react-router-dom";
 // import { FaFacebook, FaInstagram, FaYoutube, FaTwitter, FiLink } from "react-icons/bi";
 
 const Footer = () => {
@@ -61,24 +62,24 @@ const Footer = () => {
                 <h2 className="title">Site Navigation</h2>
                 <ul className="list-unstyled">
                   <li>
-                    <a href="./index.html" title="">
-                       Home
-                    </a>
+                  <Link className="linkss" to="/">
+                    Home
+                  </Link>
                   </li>
                   <li>
-                    <a href="./about.html" title="">
-                       About
-                    </a>
+                  <Link className="linkss" to="/About">
+                    About
+                  </Link>
                   </li>
                   <li>
-                    <a href="./connect.html" title="">
-                      Connet
-                    </a>
+                  <Link className="linkss" to="/Connect">
+                    Connect
+                  </Link>
                   </li>
                   <li>
-                    <a href="./contact.html" title="">
-                       Contact
-                    </a>
+                  <Link className="linkss" to="/Contact">
+                    Contact
+                  </Link>
                   </li>
                 </ul>
               </div>
