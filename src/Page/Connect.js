@@ -1,7 +1,8 @@
 import React from 'react';
+import Programs from '../Components/Programs';
 function Connect() {
   return (
-    <div>Connect</div>
+    <Programs />
   )
 }
 
