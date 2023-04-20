@@ -1,7 +1,12 @@
 import React from 'react'
+import History from '../Components/History';
+import Footer from '../Components/Footer'
 function About() {
     return (
-        <div>About US</div>
+        <>
+            <History />
+            <Footer />
+        </>
     )
 }
 
