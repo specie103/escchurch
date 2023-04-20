@@ -4,7 +4,7 @@ import Welcome from '../Components/Welcome'
 import Anthem from '../Components/Anthem'
 import Programs from '../Components/Programs'
 import Footer from '../Components/Footer'
-import UpcomingEvents from '../Components/Events'
+import UpcomingEvents from '../Components/Events1'
 
 const numberOfEvents = 1;
 function Home() {

@@ -1,10 +1,14 @@
 import React from 'react'
-import UpcomingEvents from '../Components/Events'
+import Footer from '../Components/Footer'
+import UpcomingEvents2 from '../Components/Events2'
 
 
 function Events() {
   return (
-    <UpcomingEvents {...(0, 9)} />
+    <>
+    <UpcomingEvents2/>
+    <Footer />
+    </>
   )
 }
 
