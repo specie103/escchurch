@@ -15,8 +15,8 @@ app.post('/send_email', (req, res) => {
     port: 465,
     secure: true, // use SSL
     auth: {
-      user: 'thelaw103@gmail.com', // your email address
-      pass: 'IM/18B/1281', // your email password
+      user: '', // your email address
+      pass: '', // your email password
     },
   });
 
