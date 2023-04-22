@@ -3,20 +3,21 @@ import Container from 'react-bootstrap/Container';
 import { Link } from 'react-router-dom';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import logo from '../images/logo.png';
+import logo from '../images/logo2.png';
 
 export default function Menu() {
   return (
     <Navbar collapseOnSelect expand="lg"   className=" custom-nav" sticky='top'>
       <Container fluid>
-      <Navbar.Brand href="/" className='navbar-brand'>
+      <Navbar.Brand href="/">
             <img
+              alt=""
               src={logo}
-              width="200"
-              height="50"
-              className="d-inline-block align-top"
-              alt="React Bootstrap logo"
-            />
+              width="40"
+              height="40"
+              className="d-inline-block align-top bluec"
+            />{' '}
+           <span className='bluec fs-4 h1'>Our Safe Haven</span>
           </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav navbar-toggler navbar-toggler-icon" />
         <Navbar.Collapse id="responsive-navbar-nav navbar-toggler-icon">

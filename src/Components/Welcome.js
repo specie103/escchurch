@@ -2,7 +2,7 @@ import React from 'react'
 
 function Welcome() {
     return (
-        <div className='container my-3 w-75'>
+        <div className='container my-3 welcome'>
             <h1 className='hone bluec mt-5'>Welcome to OUR SAFE HAVEN</h1>
             <p className='fs-5'>The mighty ship of the Cherubim & Seraphim Church Movement Surulere Ayo Ni O set sail in January 1971 and berthed in Kilometre 4, 
                 Apapa/Oshodi Expressway, Sanya, Surulere Lagos for close to twenty years. The English Service Chapel originally referred 

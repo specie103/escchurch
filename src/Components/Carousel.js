@@ -2,8 +2,7 @@ import React from "react";
 import { Carousel } from "react-bootstrap";
 import slide1 from '../images/happyc.jpg';
 import slide2 from '../images/slidder2.jpg';
-import slide3 from '../images/Sliderr_1.jpg'
-// import slide3 from '../images/'
+import slide3 from '../images/Choir2.jpg'
 import slide5 from '../images/ways.jpg'
 import slide4 from '../images/angel.jpg'
 

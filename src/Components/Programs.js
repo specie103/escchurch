@@ -9,6 +9,7 @@ import fifthSun from '../images/FifthSun.png';
 import holyComm from '../images/hcomm.png';
 import lastWednesday from '../images/lastWednesday.png';
 import goodMJ from '../images/gmj.png';
+import secondSat from '../images/secondSat.png'
 
 const Column = ({title, imgSrc, description, moreText}) => {
     const [showMore, setShowMore] = useState(false);
@@ -93,7 +94,7 @@ const Programs = ({limit}) => {
             moreText: "Thou made him to have dominion over the works of thy hands… Psalm 8:6"
         }, {
             title: "SECOND SATURDAY OF EVERY QUARTER 10 – 11AM",
-            imgSrc: fourthSun,
+            imgSrc: secondSat,
             description: "For the Lord Dwell in Zion",
             moreText: "Sing and rejoice, O daughter of Zion, for behold, I come and I will dwell in your midst, declares the LORD. Zechariah 2:10"
         },

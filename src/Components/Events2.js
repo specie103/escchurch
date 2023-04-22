@@ -62,23 +62,23 @@ const UpcomingEvents2 = ({numberOfEvents}) => {
                             {
                             event.title
                         }</h3>
-                        <h5 className="event-description">
+                        <p className="event-description">
                             {
                             event.description
-                        }</h5>
-                        <h6>
+                        }</p>
+                        <h6 className="bluec">
                         {
                             event.time
                         }
                         </h6>
                     </div>
-                    <div className="flex-item4"> {
+                    <div className="flex-item4 "> {
                         isEventOver ? (
-                            <div className="event-timer">
+                            <div className="event-timer bg-white">
                                 <span className="timer-value text-danger fw-bold">This Event is Over</span>
                             </div>
                         ) : (
-                            <div className="event-timer">
+                            <div className="event-timer bg-light">
                                 <div className="timer-item">
                                     <span className="timer-value">
                                         {

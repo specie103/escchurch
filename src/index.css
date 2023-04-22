@@ -122,7 +122,7 @@ p {
 }
 
 .preloader-text {
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: bold;
   color: #101c7c;
   position: absolute;
@@ -271,6 +271,17 @@ p {
   animation: zoom 9s;
 }
 
+/* =======Welcome Container ===== */
+
+.welcome{
+  width: 80%;
+}
+@media (max-width:800px) {
+  
+.welcome{
+  width: 95%;
+}
+}
 /*==============ANTHEM / MP3 =====*/
 
 .mp3-player {
