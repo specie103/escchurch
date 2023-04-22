@@ -1097,7 +1097,7 @@ figure.snip0069.hover figcaption:before {
 
 .contact-info-icon i {
   font-size: 20px;
-  line-height: 70px;
+  /* line-height: 70px; */
   color: #101c7c;
 }
 

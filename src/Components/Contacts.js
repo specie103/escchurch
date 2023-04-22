@@ -62,7 +62,45 @@ const ContactUs = () => {
                 <Container className="ccontainer">
                     <div className="row">
                         <div className="contact-info">
-                            {/* Contact info goes here */} </div>
+                        <div className="contact-info">
+              <div className="contact-info-item">
+                <div className="contact-info-icon">
+                  <i className="bi bi-geo-fill"></i>
+                </div>
+
+                <div className="contact-info-content">
+                  <h4 className="text-start">Address</h4>
+                  <p>78, Muyiwa Opaleye Street, <br />
+                    Off Sanya Street KM. 4
+                    <br /> Apapa Oshodi Expressway, <br />Sanya
+                    Bus-stop, Surulere, Lagos.
+                  </p>
+                </div>
+              </div>
+
+              <div className="contact-info-item">
+                <div className="contact-info-icon">
+                  <i className="bi bi-phone-vibrate-fill"></i>
+                </div>
+
+                <div className="contact-info-content">
+                  <h4>Phone</h4>
+                  <p>08060755553, &nbsp; 07087476700</p>
+                </div>
+              </div>
+
+              <div className="contact-info-item">
+                <div className="contact-info-icon">
+                  <i className="bi bi-envelope-check"></i>
+                </div>
+
+                <div className="contact-info-content">
+                  <h4>Email</h4>
+                  <p>info@escsurulereayonio.org</p>
+                </div>
+              </div>
+            </div>
+             </div>
 
                         <div className="contact-form">
                             <form onSubmit={handleSubmit}
