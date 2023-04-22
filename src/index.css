@@ -937,3 +937,48 @@ figure.snip0069.hover figcaption:before {
 .image-column {
   flex-wrap: wrap;
 }
+
+
+/* =====Social Media Connect ===== */
+
+.social-media-section {
+  background-color: #f8f9fa; 
+  padding: 10px 0; 
+  width: 70%;
+}
+@media (max-width:800px) {
+  .social-media-section {
+    width: 80%;
+  }
+}
+.connectp{
+  width: 80%;
+}
+@media (max-width:800px) {
+  .connectp{
+    width: 90%;
+  }
+}
+.social-media-row {
+  display: flex; 
+  justify-content: center; 
+}
+
+.social-media-col {
+  text-align: center; 
+  transition: transform 0.3s ease; 
+}
+
+.social-media-col:hover {
+  transform: translateY(-7px); 
+}
+
+.social-media-link {
+  display: inline-block; 
+  padding: 15px; 
+}
+
+.social-media-icon {
+  font-size: 60px; 
+  color: #007bff; 
+}
