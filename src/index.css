@@ -44,7 +44,7 @@ p {
   font-family: "Raleway", sans-serif;
   text-align: justify;
   font-weight: 300;
-  font-size: 17px;
+  font-size: 18px;
 }
 
 .bluec {
@@ -931,4 +931,9 @@ figure.snip0069.hover figcaption:before {
   align-items: center;
   flex-flow: wrap;
   margin: 0;
+}
+
+/* ===== Church Structure ===== */
+.image-column {
+  flex-wrap: wrap;
 }

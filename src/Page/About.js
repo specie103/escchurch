@@ -3,6 +3,7 @@ import History from '../Components/History';
 import Footer from '../Components/Footer'
 import VisionMission from '../Components/VisionMission';
 import Leaders from '../Components/Leaders';
+import ChurchStructure from '../Components/ChurchStructure';
 
 function About() {
     return (
@@ -10,6 +11,7 @@ function About() {
             <History />
             <VisionMission />
             <Leaders />
+            <ChurchStructure />
             <Footer />
         </>
     )

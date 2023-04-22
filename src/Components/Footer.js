@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import logo from '../images/logo2.png'
 import { Link } from "react-router-dom";
-// import { FaFacebook, FaInstagram, FaYoutube, FaTwitter, FiLink } from "react-icons/bi";
+
 
 const Footer = () => {
   return (
