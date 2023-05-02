@@ -88,7 +88,7 @@ const Programs = ({limit}) => {
             description: "Good Morning Jesus",
             moreText: "If I can just touch the hem of His garment"
         }, {
-            title: "Last Wednesday of the Month",
+            title: "Last Wednesdays",
             imgSrc: lastWednesday,
             description: "Dominion Service 3-4PM",
             moreText: "Thou made him to have dominion over the works of thy hands… Psalm 8:6"

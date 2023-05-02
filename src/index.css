@@ -353,15 +353,18 @@ p {
 
 .card {
   width: 100%;
+  max-height: 500px;
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(16, 28, 124, 0.8);
   transition: all 0.3s ease;
   border: 1px solid #101c7c;
+  transition: max-height 4s ease;
 }
 
 .card:hover {
   box-shadow: 0 4px 8px rgba(0, 98, 204, 0.9);
   transform: translateY(-8px);
+  transition: all 1.3s ease;
 }
 
 .card-img-top {
@@ -393,7 +396,7 @@ p {
   display: none;
   margin-top: 20px;
   overflow: hidden;
-  transition: max-height 2.5s ease-out;
+  max-height: none;
 }
 
 .show {
@@ -444,6 +447,7 @@ p {
 
 /* styles.css */
 .read-more-button {
+  max-height: 500px;
   color: #101c7c; /* White text */
   margin: auto;
   margin-left: 30%;
@@ -452,7 +456,7 @@ p {
   font-size: 16px; /* Set font size */
   cursor: pointer; /* Change cursor on hover */
   opacity: 0; /* Hide button by default */
-  animation: fade-inn 0.5s ease-in-out forwards; /* Add fade-in animation */
+  animation: fade-inn 1s ease-in-out forwards; 
 }
 
 @keyframes fade-inn {
@@ -465,6 +469,8 @@ p {
     transform: translateY(0);
   }
 }
+
+
 
 /*===== More--- Buttons== */
 .centered-container {
@@ -693,6 +699,13 @@ footer.nb-footer .footer-about .social-media ul li a:hover {
 }
 footer.nb-footer .footer-info-single {
   margin-top: 30px;
+  min-height: 250px;
+}
+@media (max-width: 800px) {
+  footer.nb-footer .footer-info-single {
+    margin-top: 20px;
+    min-height: 0px;
+  }
 }
 footer.nb-footer .footer-info-single .title {
   color: #fff;

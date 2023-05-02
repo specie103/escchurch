@@ -57,7 +57,7 @@ const Footer = () => {
               </div>
             </Col>
 
-            <Col xs={12} lg={3} sm={6}>
+            <Col xs={12} md={2} className="flex-column">
               <div className="footer-info-single">
                 <h2 className="title">Site Navigation</h2>
                 <ul className="list-unstyled">
@@ -85,8 +85,8 @@ const Footer = () => {
               </div>
             </Col>
 
-            <Col xs={12} lg={3} sm={6}>
-              <div className="footer-info-single">
+            <Col xs={12} md={3} className="flex-column d-flex ">
+              <div className="footer-info-single flex-grow-1">
                 <h2 className="title">Connect</h2>
                 <ul className="list-unstyled">
                   <li>
@@ -113,13 +113,13 @@ const Footer = () => {
           </div>
         </Col>
 
-        <Col xs={12} lg={3} sm={6}>
-          <div className="footer-info-single">
+        <Col xs={12} md={3} className="flex-column d-flex">
+          <div className="footer-info-single flex-grow-1">
             <h2 className="title">Contact</h2>
             <ul className="list-unstyled">
               <li>
-                <a href="mailto:info@example.com" title="">
-                <i className="bi bi-envelope-at-fill"></i> info@escsurulereayonio.org
+                <a href="mailto:info@escsurulereayonio.org/" title="">
+                <i className="bi bi-envelope-fill"></i> info@escsurulereayonio.org
                 </a>
               </li>
               <li>
@@ -138,8 +138,8 @@ const Footer = () => {
             </ul>
           </div>
         </Col>
-        <Col xs={12} lg={3} sm={6}>
-          <div className="footer-info-single">
+        <Col xs={12} md={3} className="flex-column d-flex">
+          <div className="footer-info-single flex-grow-1">
             <h2 className="title">Giving</h2>
             <ul className="list-unstyled">
               <li>
